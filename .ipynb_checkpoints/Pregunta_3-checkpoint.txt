@@ -1,0 +1,19 @@
+Los comandos y la salida de la consola es:
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples$ ls
+AI-and-Analytics  CONTRIBUTING.md    Libraries    Publications  release.json      SECURITY.md  third-party-programs.txt
+common            DirectProgramming  License.txt  README.md     RenderingToolkit  Templates    Tools
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples$ cd DirectProgramming/
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming$ ls
+C++  C++SYCL  C++SYCL_FPGA  Fortran
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming$ cd C++SYCL/
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL$ ls
+CombinationalLogic  GraphAlgorithms  guided_concurrentKernels_SYCLMigration     Jupyter    N-BodyMethods  ParallelPatterns     SpectralMethods
+DenseLinearAlgebra  GraphTraversal   guided_convolutionSeparable_SYCLmigration  MapReduce  OpenCLInterop  SparseLinearAlgebra  StructuredGrids
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL$ cd DenseLinearAlgebra/
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra$ ls
+complex_mult                           guided_jacobi_iterative_gpu_optimization  guided_simpleCudaGraphs_SYCLMigration  simple-add
+guided_jacobiCudaGraphs_SYCLMigration  guided_matrix_mul_SYCLMigration           matrix_mul                             vector-add
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra$ cd matrix_mul/
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ ls
+build_omp.sh  build.sh  License.txt  Makefile  Makefile.win  matrix_mul_dpcpp.vcxproj  matrix_mul.sln  README.md  run_omp.sh  run.sh  sample.json  src  third-party-programs.txt
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ 

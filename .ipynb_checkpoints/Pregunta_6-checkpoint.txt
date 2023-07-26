@@ -1,0 +1,46 @@
+Pregunta 6.1. Se indica el Job ID correspondiente al comando qsub
+u196573@s001-n012:~$ qsub -I
+qsub: waiting for job 2348548.v-qsvr-1.aidevcloud to start
+qsub: job 2348548.v-qsvr-1.aidevcloud ready
+
+
+########################################################################
+#      Date:           Wed 26 Jul 2023 01:17:55 PM PDT
+#    Job ID:           2348548.v-qsvr-1.aidevcloud
+#      User:           u196573
+# Resources:           cput=75:00:00,neednodes=1:batch:ppn=2,nodes=1:batch:ppn=2,walltime=06:00:00
+########################################################################
+
+u196573@s001-n063:~$ 
+
+Se cerro el DevCloud, por lo que volvi hacerlo de nuevo y me quedo de esta forma:
+u196573@s001-n011:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ qsub -l nodes=1:xeon:ppn=2 -d . run_a.sh
+2348560.v-qsvr-1.aidevcloud
+u196573@s001-n011:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ 
+
+Pregunta 6.2. Los archivos generados son:
+run_a.sh.e2348560
+run_a.sh.o2348560
+
+Pregunta 6.3. Mostrar el contenido de ambos archivos error y output stream (.e y .o) generados
+Esta es la salida para el archivo run_a.sh.e2348560:
+/var/spool/torque/mom_priv/jobs/2348560.v-qsvr-1.aidevcloud.SC: line 7: cd: /home/u196573/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul./matrix_mul_omp: No such file or directory
+
+Esta es la salida para el archivo run_a.sh.o2348560:
+########################################################################
+#      Date:           Wed 26 Jul 2023 01:50:52 PM PDT
+#    Job ID:           2348560.v-qsvr-1.aidevcloud
+#      User:           u196573
+# Resources:           cput=75:00:00,neednodes=1:xeon:ppn=2,nodes=1:xeon:ppn=2,walltime=06:00:00
+########################################################################
+
+
+start: 230726.135105.512
+
+
+stop: 230726.135105.534
+
+########################################################################
+# End of output for job 2348560.v-qsvr-1.aidevcloud
+# Date: Wed 26 Jul 2023 01:51:05 PM PDT
+########################################################################

@@ -1,0 +1,15 @@
+El comando para clonar es:
+u196573@s001-n012:~$ cd Examen_CPAR-Curso1/
+u196573@s001-n012:~/Examen_CPAR-Curso1$ git clone https://github.com/oneapi-src/oneAPI-samples
+
+Y la salida es la siguiente:
+u196573@s001-n012:~/Examen_CPAR-Curso1$ git clone https://github.com/oneapi-src/oneAPI-samples
+Cloning into 'oneAPI-samples'...
+remote: Enumerating objects: 30303, done.
+remote: Counting objects: 100% (1121/1121), done.
+remote: Compressing objects: 100% (501/501), done.
+remote: Total 30303 (delta 610), reused 1062 (delta 591), pack-reused 29182
+Receiving objects: 100% (30303/30303), 361.19 MiB | 3.44 MiB/s, done.
+Resolving deltas: 100% (19722/19722), done.
+Updating files: 100% (4727/4727), done.
+u196573@s001-n012:~/Examen_CPAR-Curso1$ 

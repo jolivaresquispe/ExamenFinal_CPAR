@@ -1,0 +1,25 @@
+Pregunta 7.1. Cuáles son las locaciones de git?
+Las locaciones de git son:
+a) Repositorio local: este es el repositorio de Git que está en su computadora. Es donde guarda su código y lo rastrea.
+b) Repositorio remoto: este es el repositorio de Git que se encuentra en un servidor en línea. Se puede usar para compartir su código con otros o para almacenar copias de seguridad de su código.
+c) Área de trabajo: este es el directorio en su computadora que contiene los archivos que están siendo rastreados por Git.
+
+Pregunta 7.2. Qué es el speedup y cómo se calcula?
+El speedup es una medida de cuánto más rápido se ejecuta un programa en un sistema paralelo que en un sistema secuencial. Se calcula dividiendo el tiempo de ejecución del programa en el sistema secuencial por el tiempo de ejecución del programa en el sistema paralelo. La fórmula para calcular el speedup es:
+
+speedup = Ts / Tp
+
+donde:
+Ts: tiempo de ejecución del programa en el sistema secuencial
+Tp: tiempo de ejecución del programa en el sistema paralelo
+
+Pregunta 7.3. Mencione dos técnicas de paralelización
+En la teoría se mencionan estas 2 técnicas
+Paralelismo de datos: esta técnica divide el conjunto de datos en subconjuntos más pequeños y asigna cada subconjunto a un procesador diferente.
+Paralelismo de tareas: esta técnica divide la tarea en subtareas más pequeñas y asigna cada subtarea a un procesador diferente.
+
+Pregunta 7.4. Cuáles son las dos leyes fundamentales de la computación paralela?
+Las dos leyes fundamentales de la computación paralela son:
+
+A. La ley de Amdahl: es la que establece que la mejora máxima del rendimiento de un programa paralelo está limitada por la fracción de código que no se puede paralelizar.
+B. La ley de Gustafson: es la que establece que el rendimiento de un programa paralelo aumenta linealmente con el número de procesadores, siempre que la cantidad de trabajo que se puede paralelizar sea mayor que el costo de la comunicación entre los procesadores.

@@ -1,0 +1,33 @@
+Los comandos son los siguientes:
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src$ ls
+matrix_mul_omp.cpp  matrix_mul_sycl.cpp
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src$ nano matrix_mul_omp.cpp
+
+En el archivo matrix_mull_omp.cpp se comenta las siguientes lienas dentro de la función main:
+ // MatrixMulOpenMpGpuOffloading();
+ // cout << "Result of matrix multiplication using GPU offloading: ";
+ // Result2 = VerifyResult(c);
+
+Pregunta 4.1. Luego ejecutamos el comando git diff y se muestra la suiguiente salida en consola:
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src$ git diff
+diff --git a/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src/matrix_mul_omp.cpp b/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src/matrix_mul_omp.cpp
+index f34edad6..41126ac0 100644
+--- a/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src/matrix_mul_omp.cpp
++++ b/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src/matrix_mul_omp.cpp
+@@ -54,9 +54,9 @@ int main(void) {
+   cout << "Result of matrix multiplication using OpenMP: ";
+   Result1 = VerifyResult(c);
+ 
+-  MatrixMulOpenMpGpuOffloading();
+-  cout << "Result of matrix multiplication using GPU offloading: ";
+-  Result2 = VerifyResult(c);
++ // MatrixMulOpenMpGpuOffloading();
++ // cout << "Result of matrix multiplication using GPU offloading: ";
++ // Result2 = VerifyResult(c);
+ 
+   return Result1 || Result2;
+ }
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src$ 
+
+Pregunta 4.2. Explicación:
+El comando "git diff" permite comparar cambios en archivos, ramas y commit. También ayuda a descubrir los errores con rapidez y seguir más fácilmente el desarrollo de un proyecto. En este caso git diff me esta avisando los cambios que he realizado en el archivo matrix_mul_omp.cpp.

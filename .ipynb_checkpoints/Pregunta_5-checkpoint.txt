@@ -1,0 +1,11 @@
+Los comandos son los siguientes:
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul/src$ cd ..
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ ls
+build_omp.sh  build.sh  License.txt  Makefile  Makefile.win  matrix_mul_dpcpp.vcxproj  matrix_mul.sln  README.md  run_omp.sh  run.sh  sample.json  src  third-party-programs.txt
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ make build_omp 
+
+Y la salida en consola es la siguiente:
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ make build_omp 
+icpx -fiopenmp -fopenmp-targets=spir64 -D__STRICT_ANSI__ -g -o matrix_mul_omp src/matrix_mul_omp.cpp 
+icpx: remark: Note that use of '-g' without any optimization-level option will turn off most compiler optimizations similar to use of '-O0'; use '-Rno-debug-disables-optimization' to disable this remark [-Rdebug-disables-optimization]
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul$ 

@@ -1,0 +1,9 @@
+El comando para ir al directorio es:
+u196573@s001-n012:~/Examen_CPAR-Curso1$ ls
+u196573@s001-n012:~/Examen_CPAR-Curso1$ cd oneAPI-samples/
+
+Y la salida es la siguiente:
+u196573@s001-n012:~/Examen_CPAR-Curso1$ ls
+oneAPI-samples  Pregunta_1.txt  Pregunta_2.txt
+u196573@s001-n012:~/Examen_CPAR-Curso1$ cd oneAPI-samples/
+u196573@s001-n012:~/Examen_CPAR-Curso1/oneAPI-samples$ 
